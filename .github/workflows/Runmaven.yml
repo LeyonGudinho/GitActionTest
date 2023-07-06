@@ -29,5 +29,14 @@ jobs:
         target_url: leyongudinho.github.io/GitActionTest/${{ github.run_number }}
     - run: |
         echo Build Number: ${{ github.run_number }}       
+        
+    - name: Update Deployment Status
+      uses: peter-evans/create-or-update-deployment@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        status: 'success'
+        environment: 'TestNG Report'
+        environment_url: ${{ github.event.repository.html_url }}/tree/${{ github.sha }}/target/surefire-reports
+
 
 
