@@ -1,33 +1,26 @@
-name: Run Selenium Chrome automation and generate Extent report
-on:
-  push:
-    branches:
-      - main
+name: Maven TestNG
+
+on: [push, pull_request]
+
 jobs:
-  main:
+  build:
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-java@v2
-        with:
-          java-version: '11'
-          distribution: 'temurin'
-      - run: |
-             sudo apt install google-chrome-stable
-      - run: mvn -B package --file pom.xml
-      #- run: |
-      #    mvn surefire-report:report
-      - uses: actions/upload-artifact@v2
-        with:
-          name: test-report
-          path: /home/runner/work/GitActionTest/GitActionTest/target/surefire-reports      
-      - name: HTML Preview
-        id: html_preview
-        uses: pavi2410/html-preview-action@v2
-        with:
-          html_file: '/home/runner/work/GitActionTest/GitActionTest/target/surefire-reports/index.html'
-      - uses: peaceiris/actions-gh-pages@v3.8.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          #target_url: leyongudinho.github.io/GitActionTest/${{ github.run_number }} 
-          publish_dir: '/home/runner/work/GitActionTest/GitActionTest/'          
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    
+    - name: Set up JDK 11
+      uses: actions/setup-java@v2
+      with:
+        java-version: 11
+        distribution: 'temurin'
+        
+    - name: Build and test with Maven
+      run: mvn test
+      
+    - name: Publish TestNG report
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: target/surefire-reports
