@@ -25,8 +25,9 @@ jobs:
         id: html_preview
         uses: pavi2410/html-preview-action@v2
         with:
-          html_file: 'index.html'
+          html_file: './target/index.html'
       - uses: peaceiris/actions-gh-pages@v3.8.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          target_url: leyongudinho.github.io/GitActionTest/${{ github.run_number }}          
+          target_url: leyongudinho.github.io/GitActionTest/${{ github.run_number }} 
+          publish_dir: ./target
