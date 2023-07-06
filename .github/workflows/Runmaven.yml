@@ -26,9 +26,7 @@ jobs:
         uses: pavi2410/html-preview-action@v2
         with:
           html_file: 'index.html'
-      - uses: Sibz/github-status-action@v1
-        with: 
-            authToken: ${{secrets.GITHUB_TOKEN}}
-            context: 'Test report'
-            publish_dir: target
-            target_url: leyongudinho.github.io/GitActionTest/${{ github.run_number }}          
+      - uses: peaceiris/actions-gh-pages@v3.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          target_url: leyongudinho.github.io/GitActionTest/${{ github.run_number }}          
