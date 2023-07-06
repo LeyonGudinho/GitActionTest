@@ -28,9 +28,4 @@ jobs:
           html_file: 'index.html'
       - uses: peaceiris/actions-gh-pages@v3.8.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: results-history
-          keep_files: true           
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+          github_token: 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
