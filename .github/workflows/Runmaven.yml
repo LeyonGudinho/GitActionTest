@@ -16,6 +16,9 @@ jobs:
         java-version: 11
         distribution: 'temurin'
         
+    - run: |
+           sudo apt install google-chrome-stable      
+           
     - name: Build and test with Maven
       run: mvn test
       
@@ -25,3 +28,4 @@ jobs:
         personal_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: target/surefire-reports
         target_url: leyongudinho.github.io/GitActionTest/${{ github.run_number }}
+    - run: echo Build Number: ${{ github.run_number }} >> README.md
