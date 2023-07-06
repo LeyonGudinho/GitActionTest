@@ -1,4 +1,4 @@
-name: Run main method
+name: Run Selenium Chrome automation and generate Extent report
 on:
   push:
     branches:
@@ -8,5 +8,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: javac test.java
-      - run: java test
+      - uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+      - run: |
+          echo "Installing Selenium WebDriver"
+          sudo apt-get install selenium-server-standalone
+          echo "Installing ChromeDriver"
+          wget https://chromedriver.storage.googleapis.com/89.0.4389.82/chromedriver_linux64.zip
+          unzip chromedriver_linux64.zip
+          sudo mv chromedriver /usr/local/bin/chromedriver
+      - run: |
+          echo "Installing ExtentReports"
+          sudo apt-get install extentreports
+      - run: |
+          echo "Running Selenium Chrome automation"
+          java -cp selenium-server-standalone-3.141.59.jar:. SeleniumChromeAutomation
+      - run: |
+          echo "Generating Extent report"
+          java -cp selenium-server-standalone-3.141.59.jar:. ExtentReportExample
