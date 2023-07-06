@@ -25,18 +25,11 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         personal_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: target/surefire-reports
+        publish_dir: target/surefire-reports-${{github.run_number}}
         target_url: leyongudinho.github.io/GitActionTest/${{ github.run_number }}
     - run: |
         echo Build Number: ${{ github.run_number }}       
         
-    - name: Update Deployment Status
-      uses: peter-evans/create-or-update-deployment@v2
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        status: 'success'
-        environment: 'TestNG Report'
-        environment_url: ${{ github.event.repository.html_url }}/tree/${{ github.sha }}/target/surefire-reports
 
 
 
