@@ -2,18 +2,18 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[<a href='/home/runner/work/GitActionTest/GitActionTest/target/surefire-reports/test.png'> <img src='test.png' height='100' width='100'/> </a>]]>
+      <![CDATA[<a href='test.png'> <img src='test.png' height='100' width='100'/> </a>]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-06T19:01:35 UTC" name="Suite" finished-at="2023-07-06T19:01:38 UTC" duration-ms="3216">
+  <suite started-at="2023-07-06T19:26:36 UTC" name="Suite" finished-at="2023-07-06T19:26:39 UTC" duration-ms="2766">
     <groups>
     </groups>
-    <test started-at="2023-07-06T19:01:35 UTC" name="Test" finished-at="2023-07-06T19:01:38 UTC" duration-ms="3216">
+    <test started-at="2023-07-06T19:26:36 UTC" name="Test" finished-at="2023-07-06T19:26:39 UTC" duration-ms="2766">
       <class name="mytest.testSelenium">
-        <test-method signature="testAction()[pri:0, instance:mytest.testSelenium@3f6b0be5]" started-at="2023-07-06T19:01:35 UTC" name="testAction" finished-at="2023-07-06T19:01:38 UTC" duration-ms="3127" status="PASS">
+        <test-method signature="testAction()[pri:0, instance:mytest.testSelenium@3f6b0be5]" started-at="2023-07-06T19:26:36 UTC" name="testAction" finished-at="2023-07-06T19:26:39 UTC" duration-ms="2693" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[<a href='/home/runner/work/GitActionTest/GitActionTest/target/surefire-reports/test.png'> <img src='test.png' height='100' width='100'/> </a>]]>
+              <![CDATA[<a href='test.png'> <img src='test.png' height='100' width='100'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- testAction -->
