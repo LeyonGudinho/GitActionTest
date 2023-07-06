@@ -33,7 +33,7 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: /home/runner/work/GitActionTest/GitActionTest/target/surefire-reports
+          source: /target/surefire-reports
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
