@@ -13,8 +13,8 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
       - run: |
-          echo "Installing Selenium WebDriver"
-          sudo apt-get install selenium-server-standalone
+          # echo "Installing Selenium WebDriver"
+          # sudo apt-get install selenium-server-standalone
           echo "Installing ChromeDriver"
           wget https://chromedriver.storage.googleapis.com/89.0.4389.82/chromedriver_linux64.zip
           unzip chromedriver_linux64.zip
