@@ -12,19 +12,6 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
-      #- run: |
-          # echo "Installing Selenium WebDriver"
-          # sudo apt-get install selenium-server-standalone
-          #echo "Installing ChromeDriver"
-          #wget https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
-          #unzip chromedriver_linux64.zip
-          #sudo mv chromedriver /usr/local/bin/chromedriver
-      #- run: |
-          #echo "Running Selenium Chrome automation"
-          #java -cp selenium-server-standalone-3.141.59.jar:. SeleniumChromeAutomation
-      #- run: |
-          #echo "Generating Extent report"
-          #java -cp selenium-server-standalone-3.141.59.jar:. ExtentReportExample
       - name: Build with Maven
       - run: mvn -B package --file pom.xml
 
