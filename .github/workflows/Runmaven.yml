@@ -26,10 +26,8 @@ jobs:
         uses: pavi2410/html-preview-action@v2
         with:
           html_file: './target/index.html'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+      - name: Publish HTML report to GitHub Pages
+        uses: actions/github-pages@v2
         with:
-          deploy_key: ${{ secrets.PRIVATE_KEY }}
-          external_repository: <username/username.github.io>
-          publish_dir: ./target          
+          branch: gh-pages
+          path: target/surefire-reports/html   
