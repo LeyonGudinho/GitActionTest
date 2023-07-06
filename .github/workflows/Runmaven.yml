@@ -15,8 +15,8 @@ jobs:
       - run: |
              sudo apt install google-chrome-stable
       - run: mvn -B package --file pom.xml
-      - run: |
-          mvn surefire-report:report
+      #- run: |
+      #    mvn surefire-report:report
       - uses: actions/upload-artifact@v2
         with:
           name: test-report
