@@ -28,4 +28,4 @@ jobs:
           html_file: 'index.html'
       - uses: peaceiris/actions-gh-pages@v3.8.0
         with:
-          github_token: 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
+          github_token: ${{ secrets.GITHUB_TOKEN }}
