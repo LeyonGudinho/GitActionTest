@@ -21,6 +21,16 @@ jobs:
     - name: Build and test with Maven
       run: mvn test
       
+    - uses: actions/upload-artifact@v2
+      with:
+        name: test-report
+        path: ./target/surefire-reports      
+    - name: HTML Preview
+      id: html_preview
+      uses: pavi2410/html-preview-action@v2
+      with:
+        html_file: './target/surefire-reports/index.html'
+
     - name: Publish TestNG report
       uses: peaceiris/actions-gh-pages@v3
       with:
