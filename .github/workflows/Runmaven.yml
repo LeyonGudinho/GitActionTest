@@ -24,3 +24,4 @@ jobs:
       with:
         personal_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: target/surefire-reports
+        target_url: leyongudinho.github.io/GitActionTest/${{ github.run_number }}
