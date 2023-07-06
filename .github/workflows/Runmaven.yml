@@ -28,6 +28,6 @@ jobs:
           html_file: './target/index.html'
       - uses: peaceiris/actions-gh-pages@v3.8.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          #github_token: ${{ secrets.GITHUB_TOKEN }}
           target_url: leyongudinho.github.io/GitActionTest/${{ github.run_number }} 
           publish_dir: ./target
