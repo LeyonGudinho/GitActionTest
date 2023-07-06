@@ -15,3 +15,11 @@ jobs:
       - run: |
              sudo apt install google-chrome-stable
       - run: mvn -B package --file pom.xml
+      - name: Generate TestNG report
+      - run: |
+          mvn surefire-report:report
+      - name: Upload TestNG report to GitHub Actions
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-report
+          path: target/surefire-reports      
