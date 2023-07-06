@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<a href='/home/runner/work/GitActionTest/GitActionTest/target/surefire-reports/test.png'> <img src='test.png' height='100' width='100'/> </a>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-07-06T19:01:35 UTC" name="Suite" finished-at="2023-07-06T19:01:38 UTC" duration-ms="3216">
+    <groups>
+    </groups>
+    <test started-at="2023-07-06T19:01:35 UTC" name="Test" finished-at="2023-07-06T19:01:38 UTC" duration-ms="3216">
+      <class name="mytest.testSelenium">
+        <test-method signature="testAction()[pri:0, instance:mytest.testSelenium@3f6b0be5]" started-at="2023-07-06T19:01:35 UTC" name="testAction" finished-at="2023-07-06T19:01:38 UTC" duration-ms="3127" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='/home/runner/work/GitActionTest/GitActionTest/target/surefire-reports/test.png'> <img src='test.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testAction -->
+      </class> <!-- mytest.testSelenium -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
