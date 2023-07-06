@@ -26,8 +26,3 @@ jobs:
         uses: pavi2410/html-preview-action@v2
         with:
           html_file: './target/index.html'
-      - name: Publish HTML report to GitHub Pages
-        uses: actions/github-pages@v2
-        with:
-          branch: gh-pages
-          path: target/surefire-reports/html   
