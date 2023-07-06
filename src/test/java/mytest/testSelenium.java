@@ -28,7 +28,7 @@ public class testSelenium {
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         try {
             String reportDirectory = new File(System.getProperty("user.dir")).getAbsolutePath() + "/target/surefire-reports";
-            File destFile = new File(reportDirectory + "/test.png");
+            File destFile = new File("test.png");
             FileUtils.copyFile(scrFile, destFile);
             Reporter.log("<a href='"+ destFile.getAbsolutePath() + "'> <img src='"+ destFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
         } catch (IOException e) {
