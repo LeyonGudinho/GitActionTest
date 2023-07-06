@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<a href='test.png'> <img src='test.png' height='100' width='100'/> </a>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-07-06T20:20:24 UTC" name="Suite" finished-at="2023-07-06T20:20:34 UTC" duration-ms="9859">
+    <groups>
+    </groups>
+    <test started-at="2023-07-06T20:20:24 UTC" name="Test" finished-at="2023-07-06T20:20:34 UTC" duration-ms="9859">
+      <class name="mytest.testSelenium">
+        <test-method signature="testAction()[pri:0, instance:mytest.testSelenium@611889f4]" started-at="2023-07-06T20:20:24 UTC" name="testAction" finished-at="2023-07-06T20:20:34 UTC" duration-ms="9784" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='test.png'> <img src='test.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testAction -->
+      </class> <!-- mytest.testSelenium -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
