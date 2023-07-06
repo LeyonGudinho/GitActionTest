@@ -5,12 +5,12 @@
       <![CDATA[<a href='test.png'> <img src='test.png' height='100' width='100'/> </a>]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-06T20:20:24 UTC" name="Suite" finished-at="2023-07-06T20:20:34 UTC" duration-ms="9859">
+  <suite started-at="2023-07-06T20:23:30 UTC" name="Suite" finished-at="2023-07-06T20:23:40 UTC" duration-ms="9783">
     <groups>
     </groups>
-    <test started-at="2023-07-06T20:20:24 UTC" name="Test" finished-at="2023-07-06T20:20:34 UTC" duration-ms="9859">
+    <test started-at="2023-07-06T20:23:30 UTC" name="Test" finished-at="2023-07-06T20:23:40 UTC" duration-ms="9783">
       <class name="mytest.testSelenium">
-        <test-method signature="testAction()[pri:0, instance:mytest.testSelenium@611889f4]" started-at="2023-07-06T20:20:24 UTC" name="testAction" finished-at="2023-07-06T20:20:34 UTC" duration-ms="9784" status="PASS">
+        <test-method signature="testAction()[pri:0, instance:mytest.testSelenium@611889f4]" started-at="2023-07-06T20:23:30 UTC" name="testAction" finished-at="2023-07-06T20:23:40 UTC" duration-ms="9733" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[<a href='test.png'> <img src='test.png' height='100' width='100'/> </a>]]>
